@@ -4,7 +4,9 @@
 ![Alt Cover](http://upload.wikimedia.org/wikipedia/commons/4/4e/20000_title_0a.jpg "Cover")
 
 + [Wikipedia Entry](http://en.wikipedia.org/wiki/Twenty_Thousand_Leagues_Under_the_Sea "Twenty Thousand Leagues Under the Sea")
+
 ***
+
 ##Excerpt##
 
 Part One
