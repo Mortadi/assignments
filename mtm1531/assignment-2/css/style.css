@@ -9,6 +9,7 @@ color: #6CF;
 
 form{
 margin: 20em;
+height:7.5em;
 border: 5px groove #6CF;
 width: 16em;	
 padding:1em;
@@ -33,7 +34,16 @@ margin-left:2em;
 margin-bottom:0.25em;
 }
 strong{
-	margin-top:0.5em;
+	top:1em;
 	margin-left:10em;
 	border-bottom: 2px solid #FC6;
+}
+
+#func{
+margin-left:3.5em;
+	margin-right:0;
+}
+#submit{
+	width:6em;
+	
 }
