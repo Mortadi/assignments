@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+font: normal 125%/1.25 sans-serif;
+background-color: #666;	
+color: #6CF;
+}
+
+form{
+margin: 20em;
+border: 5px groove #6CF;
+width: 16em;	
+padding:1em;
+}
+label{
+	margin:0.25em;
+	
+}
+input{
+margin: 0.5em;	
+	
+}
+#num1, 
+#func {
+margin-left:1em;	
+}
+#submit, 
+#func {
+padding:0.5em;	
+background-color: #6CF;
+margin-top:0.25em;
+margin-bottom:0.25em;
+}
+strong{
+	margin-top:0.5em;
+	margin-left:10em;
+	border-bottom: 2px solid #FC6;
+}
