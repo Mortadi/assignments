@@ -1,0 +1,31 @@
+html {
+background-color: #CFF;
+
+}
+
+form{
+ margin:1em;
+ border: 2px dotted #999;	
+ width: 12em;
+}
+#add{
+background-color: #666;	
+color: #CFF;
+}
+li {
+ cursor: pointer;
+ color: #900;
+}
+ul{
+width:auto;	
+}
+h2{
+margin:1em;
+color: #C30;	
+}
+.erased {
+	color:#69C;
+	background-color: #FCC;
+	text-decoration: line-through;
+	width: auto;
+}
