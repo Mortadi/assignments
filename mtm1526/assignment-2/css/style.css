@@ -4,7 +4,7 @@ background-color: #CFF;
 }
 
 form{
- margin:1em;
+ margin:1.15em;
  border: 2px dotted #999;	
  width: 12em;
 }
@@ -20,7 +20,7 @@ ul{
 width:auto;	
 }
 h2{
-margin:1em;
+margin:1.15em;
 color: #C30;	
 }
 .erased {
