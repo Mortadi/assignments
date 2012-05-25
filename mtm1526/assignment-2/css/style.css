@@ -15,17 +15,17 @@ color: #CFF;
 li {
  cursor: pointer;
  color: #900;
+ display:block;	
+
 }
-ul{
-width:auto;	
-}
+
 h2{
 margin:1.15em;
 color: #C30;	
 }
 .erased {
 	color:#69C;
-	background-color: #FCC;
+	background-color: #FCC;	
 	text-decoration: line-through;
 	width: auto;
 }
