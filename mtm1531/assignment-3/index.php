@@ -59,7 +59,7 @@ echo 'checked';
 </div>
 <div>
 <label for="acceptterms">Accept Terms<?php if (isset($errors['acceptterms'])) : ?><?php endif; ?></label>
-<input type="checkbox" id="acceptterms" name="acceptterms" value="<?php echo $acceptterms; ?>" required> 
+<input type="checkbox" id="acceptterms" name="acceptterms" value="1" required> 
 
 
 <button type="submit">Send</button>
