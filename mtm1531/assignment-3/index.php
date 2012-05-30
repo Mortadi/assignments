@@ -43,12 +43,12 @@ echo ' checked'; }
 ?>>
 <label for="english">English</label>
 <input type="radio" id="french" name="prel" value="fr"<?php if ($prel == 'fr') {
-echo 'checked';
-}?>>
+echo 'checked'; }
+?>>
 <label for="french">French</label>
 <input type="radio" id="spanish" name="prel" value="sp"<?php if ($prel == 'sp') {
-echo 'checked';
-}?>>
+echo 'checked'; }
+?>>
 <label for="spanish">Spanish</label>
 </fieldset>
 
