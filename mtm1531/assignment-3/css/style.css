@@ -25,6 +25,14 @@ margin-left:1em;
 margin: 0.5em 0.25em ;
 display:block;
 }
+legend{
+	margin: 0.5em 0.25em ;
+}
+p{
+margin-left: 2em;
+margin-top:4.5em;	
+color:#0F0;
+}
 input{
 
 margin-left:2.5em;
@@ -39,18 +47,21 @@ width: 13.25em;
 color:#9C6;	
 border-bottom: 5px groove #9C6;
 }
+fieldset{
+border: 3px solid #9C6;
+}
 .notes
 {
 height: 12em;
 width:33em;	
 }
-
 #notes{
 height: 12em;
 width: 40em;	
 }
 .lang{
 border: 0;	
+height: 4em;	
 display: inline;
 }
 .lang label{

@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$errors['acceptterms'] = true;
 	}
 	
-	if (!in_array($prel, array('en', 'fr', 'sp'))) {
+	if (!in_array($prel, array('en', 'fr', 'sp'))) 
 		$errors['prel'] = true;
 	}
 
@@ -45,3 +45,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 }
 }
+

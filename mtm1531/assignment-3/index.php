@@ -22,19 +22,20 @@ require_once "includes/form-processor.php"
 <input type="text" id="name" name="name" value="<?php echo $name; ?>" required>
 </div>
 <div>
-<label for="email">E-mail<?php if (isset($errors['email'])) : ?> <strong>Valid E-mail Address</strong><?php endif; ?></label>
+<label for="email">E-mail<?php if (isset($errors['email'])) : ?><?php endif; ?></label>
 <input type="email" id="email" name="email" value="<?php echo $email; ?>" required>
+<p>valid e-mail address</p>
 </div>
 <div>
-<label for="username">Username<?php if (isset($errors['username'])) : ?> <strong>max length 25 characters</strong><?php endif; ?></label>
+<label for="username">Username<?php if (isset($errors['username'])) : ?><strong>max length 25 characters</strong><?php endif; ?></label>
 <input type="text" id="username" name="username" value="<?php echo $username; ?>" required>
 </div>
 <div>
 <label for="password">Password<?php if (isset($errors['password'])) : ?> <strong>is required</strong><?php endif; ?></label>
 <input type="password" id="password" name="password" value="<?php echo $password; ?>" required>
 </div>
-<div>
-<fieldset class="lang">
+<div  class="lang">
+<fieldset>
 <legend>Preferred Language</legend>
 <?php if (isset($errors['prel'])) : ?><strong>Select Language:</strong><?php endif; ?>
 <input type="radio" id="english" name="prel" value="en"<?php if ($prel == 'en') {
@@ -59,7 +60,7 @@ echo 'checked';
 </div>
 <div>
 <label for="acceptterms">Accept Terms<?php if (isset($errors['acceptterms'])) : ?><?php endif; ?></label>
-<input type="checkbox" id="acceptterms" name="acceptterms" value="1" required> 
+<input type="checkbox" id="acceptterms" name="acceptterms" value="<?php echo $acceptterms; ?>"  required> 
 
 
 <button type="submit">Send</button>
