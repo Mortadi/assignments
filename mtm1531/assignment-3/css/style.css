@@ -8,25 +8,26 @@ font-family: 'Questrial', sans-serif;
 
 
 form{
-width: 30em;
+width: 33em;
 margin: 3em auto;
 padding:1em;
 border: 5px double #9C6;
 border-radius: 3em;	
 background-color: #336;
 }
-#name {
+legend
+,#name {
 color:#9C6;	
 }
 label{
 color:#9C6;
 margin-left:1em;
-margin: 1em 0.25em ;
+margin: 0.5em 0.25em ;
 display:block;
 }
 input{
-width: 26em;
-margin-left:4.5em;
+
+margin-left:2.5em;
 }
 div{
 height:4em;
@@ -36,4 +37,36 @@ h1{
 margin: 2em auto;
 width: 13.25em;
 color:#9C6;	
+border-bottom: 5px groove #9C6;
+}
+.notes
+{
+height: 12em;
+width:33em;	
+}
+
+#notes{
+height: 12em;
+width: 40em;	
+}
+.lang{
+border: 0;	
+display: inline;
+}
+.lang label{
+	
+	display: inline-block;
+}
+.lang input{
+margin:0 1em;
+}
+button{
+margin-left:5em;
+}
+strong{
+color:#CCC;
+background-color: #F33;
+}
+required{
+	boreder: 5px solid #fff;
 }
