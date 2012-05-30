@@ -1,6 +1,8 @@
 <?php
 $errors = array();
 $completed = false;
+
+
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
 $notes = filter_input(INPUT_POST,'notes', FILTER_SANITIZE_STRING);
@@ -36,12 +38,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	}
 	
 	if (!in_array($prel, array('en', 'fr', 'sp'))) 
-		$errors['prel'] = true;
+{$errors['prel'] = true;
 	}
 
     if (empty($errors)) {
      $completed = true;
-     mail($email, 'Thank you for your feedback and using our Registration Form', "From: Mohamed <elmo0008@algonquinlive.com>\r\n");
+     mail($email, 'Thank you for your feedback and using our registration form', "From: Mohamed <elmo0008@algonquinlive.com>\r\n");
 
 }
 }
