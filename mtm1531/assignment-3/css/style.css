@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+background-color:#F8E4CB;	
+font-family: 'Questrial', sans-serif;
+}
+
+
+form{
+width: 30em;
+margin: 3em auto;
+padding:1em;
+border: 5px double #9C6;
+border-radius: 3em;	
+background-color: #336;
+}
+#name {
+color:#9C6;	
+}
+label{
+color:#9C6;
+margin-left:1em;
+margin: 1em 0.25em ;
+display:block;
+}
+input{
+width: 26em;
+margin-left:4.5em;
+}
+div{
+height:4em;
+border-bottom: 1px solid #9C6;	
+}
+h1{
+margin: 2em auto;
+width: 13.25em;
+color:#9C6;	
+}
