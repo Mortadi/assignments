@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($errors)) {
      $completed = true;
-     mail($email, 'Thank you for your feedback and using our Registration Form', "From: Mohamed <elmo0008@algonquincollege.com>\r\n");
+     mail($email, 'Thank you for your feedback and using our Registration Form', "From: Mohamed <elmo0008@algonquinlive.com>\r\n");
 
 }
 }
