@@ -11,7 +11,7 @@ require_once "includes/form-processor.php"
 </head>
 <body>
 <?php if ($completed) : ?>
-<strong class="thx">Thank you for using our registration form! <a href="http://imm.edumedia.ca/elmo0008/mtm1531/assignment-3/">Back to form</a> </strong>
+<strong>Thank you for using our registration form! <a href="http://imm.edumedia.ca/elmo0008/mtm1531/assignment-3/">Back to form</a></strong>
 <?php else : ?>
 
 <h1>Registration Form Validation</h1>
