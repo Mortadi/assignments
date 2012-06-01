@@ -1,6 +1,6 @@
 body {
 	font: normal 120%/1.5 sans-serif;
-	background-color: #CCC;
+	background-color: #D1D1D1;
 }
 
 #circle {
@@ -10,8 +10,9 @@ body {
 	position: absolute;
 	top: 25%;
 	width: 250px;
+	color: #633;
 	background-color: #F93;
-	border: 12px double #666;
+	border: 12px double #633;
 	border-radius: 150px;
 	font-size: 10em;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
