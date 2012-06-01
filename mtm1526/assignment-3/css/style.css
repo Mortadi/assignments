@@ -1,0 +1,39 @@
+body {
+	font: normal 120%/1.5 sans-serif;
+	background-color: #CCC;
+}
+
+#circle {
+	height: 250px;
+	left: 50%;
+	margin: -80px 0 0 -135px;
+	position: absolute;
+	top: 25%;
+	width: 250px;
+	background-color: #F93;
+	border: 12px double #666;
+	border-radius: 150px;
+	font-size: 10em;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	line-height: 225px;
+	text-align: center;
+	vertical-align: central;
+}
+form{
+background-color: #633;
+width:31em;
+margin: 1em auto;
+padding: 1em;	
+color: #F93;
+border: 8px double #F93;
+}
+button{
+background-color: #F93;	
+}
+option, 
+#property,
+#color{
+
+background-color:  #F93;
+color: #633;
+}

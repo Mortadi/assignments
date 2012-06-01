@@ -1,4 +1,4 @@
 assignments
 ===========
 
-All of the homeowrk assignments for IMM.
+All of the homework assignments for IMM.
