@@ -15,6 +15,6 @@ if (color) {
 });
 
 $('#hide-show').on('click', function (e) {
-$circle.toggle(800);
+$circle.toggle(750);
 });
 });
