@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 28, 2012 at 06:57 PM
+-- Generation Time: Jun 08, 2012 at 04:14 PM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `list_of_movies` (
   `release_date` date NOT NULL,
   `starring` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `list_of_movies`
@@ -44,5 +44,5 @@ INSERT INTO `list_of_movies` (`id`, `title`, `genre`, `directed_by`, `release_da
 (2, 'Ice Age 4', 'Adventure/Animation/Family/Comedy', 'Carlos Saldanha', '2012-07-13', 'Ray Romano, Queen Latifah, Denis Leary, John Leguizamo'),
 (3, 'Red Lights', 'Thriller', 'Rodrigo Cortes', '2012-07-13', 'Cillian Murphy, Sigourney Weaver, Robert De Niro, Elizabeth Olsen'),
 (4, 'Ted', 'Comedy', 'Seth MacFarlane', '2012-07-13', 'Mark Wahlberg, Mila Kunis, Giovanni Ribisi, Joel McHale, Seth MacFarlane'),
-(7, 'Batman 3 - Dark Knig', 'Action/Superhero', 'Christopher Nolan', '2012-07-20', 'Christian Bale'),
+(7, 'Batman 3 - Dark King', 'Action/Superhero', 'Christopher Nolan', '2012-07-20', 'Christian Bale'),
 (11, 'Killer Joe', 'Comedy', 'William Friedkin', '2012-07-27', 'Matthew McConaughey, Emile Hirsch, Thomas Haden Church, Gina Gershon, Juno Temple');
