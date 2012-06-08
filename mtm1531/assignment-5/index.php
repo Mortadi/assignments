@@ -19,7 +19,7 @@ $resultes = $sql->fetchAll();
 </head>
 
 <body>
-<h1>"List of July movies 2012"</h1>
+<h1>'List of July movies 2012'</h1>
 <?php foreach ($resultes as $movie) : ?>
 
 <h2>
