@@ -19,6 +19,8 @@ $results = $sql->fetch();
 <head>
 <meta charset="utf-8">
 <title><?php echo $results['title']; ?> Movies</title>
+<link href="css/style.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 </head>
 
 
