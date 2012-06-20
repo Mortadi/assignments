@@ -7,7 +7,7 @@ $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 $title = filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING);
 $genre = filter_input(INPUT_POST, 'genre', FILTER_SANITIZE_STRING);
 $directed_by = filter_input(INPUT_POST, 'directed_by', FILTER_SANITIZE_STRING);
-$release_date = filter_input(INPUT_POST, 'release_date', FILTER_SANITIZE_INT);
+$release_date = filter_input(INPUT_POST, 'release_date', FILTER_SANITIZE_STRING);
 $genre = filter_input(INPUT_POST, 'starring', FILTER_SANITIZE_STRING);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (strlen($directed_by) < 1 || strlen($directed_by) > 40) {
 		$errors['directed_by'] = true;
 	}
-	if (strlen($release_date) < 1 || strlen($release_date) > ) {
+	if (strlen($release_date) < 1 || strlen($release_date) > 15 ) {
 		$errors['release_date'] = true;
 	}
 	if (strlen($starring) < 1 || strlen($starring) > 256) {
@@ -69,8 +69,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <head>
         <meta charset="utf-8">
         <title>Edit Movies</title>
+        <link href="css/style.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
+    <form action="edit.php?id=<?php echo $id; ?>" method="post">
+         <fieldset>
+        	<label for="title">Title:
+            	<?php if (isset($errors['title'])) : ?>
+                <strong class="error">is required.</strong>
+                <?php endif; ?>
+            </label>
+        	<input type="text" name="title" id="title" required value="<?php echo $title; ?>">
+            
+           
+            	
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" value="0"
+                <?php if ($genre == 0) : ?>checked<?php endif; ?>>
+                
+                 <label for="directed_by">Directed By:</label>
+                <input type="text" id="directed_by" name="directed_by" value="0"
+                <?php if ($directed_by == 0) : ?>checked<?php endif; ?>>
+                
+                <label for="release_date">Release Date:</label>
+                <input type="int" id="release_date" name="release_date" value="0"
+                <?php if ($release_date == 0) : ?>checked<?php endif; ?>>
+                
+                <label for="starring">Starring:</label>
+                <input type="text" id="starring" name="starring" value="0"
+                <?php if ($starring == 0) : ?>checked<?php endif; ?>>
+                
+            
+       <br>
+            <button type="submit" class="save">Save</button>
+        </fieldset>
+        </form>
     </body>
 </html>

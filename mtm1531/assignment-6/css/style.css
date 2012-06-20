@@ -8,7 +8,7 @@ font-family: 'Righteous', cursive;
 width:30em;
 margin:0 auto;
 }
-dt{
+dt, label{
 color: #F90;	
 }
 dd{
@@ -21,8 +21,20 @@ a{
 h1{
 color: #F00;	
 }
-dl{
+dl, fieldset{
 border: 5px double #F90;
     border-radius: 2em 1em 5em 1em;	
 	padding:1em;
+}
+input{
+clean:both;	
+width:27em;
+margin-left:2em;
+}
+label{
+display:block;
+margin-left:1em;
+}
+.save{
+margin: 0.5em 0 -1em 3em;	
 }
