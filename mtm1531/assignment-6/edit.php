@@ -7,8 +7,8 @@ $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 $title = filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING);
 $genre = filter_input(INPUT_POST, 'genre', FILTER_SANITIZE_STRING);
 $directed_by = filter_input(INPUT_POST, 'directed_by', FILTER_SANITIZE_STRING);
-$release_date = filter_input(INPUT_POST, 'release_date', FILTER_SANITIZE_STRING);
 $starring = filter_input(INPUT_POST, 'starring', FILTER_SANITIZE_STRING);
+$release_date = filter_input(INPUT_POST, 'release_date', FILTER_SANITIZE_STRING);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (strlen($title) < 1 || strlen($title) > 60) {
@@ -97,22 +97,20 @@ $errors['release_date'] = true;
             <?php endif; ?>
             </label>
                 <input type="text" id="directed_by" name="directed_by" required value="<?php echo $directed_by; ?>">
-                
-                
-                <label for="release_date">Release Date:<?php if (isset($errors['release_date'])) : ?>
-            <strong class="error">is required.</strong>
-            <?php endif; ?>
-            </label>
-            <input type="text" name="release_date" id="release_date" required value="<?php echo $release_date; ?>">
-            
-              
+               
                 
                 <label for="starring">Starring:<?php if (isset($errors['starring'])) : ?>
             <strong class="error">is required.</strong>
             <?php endif; ?>
             </label>
-                <input type="text" id="starring" required value="<?php echo $starring; ?>">
+                <input type="text" name="starring" id="starring" required value="<?php echo $starring; ?>">
                 
+            <label for="release_date">Release Date:<?php if (isset($errors['release_date'])) : ?>
+            <strong class="error">is required.</strong>
+            <?php endif; ?>
+            </label>
+            <input type="text" name="release_date" id="release_date" required value="<?php echo $release_date; ?>">
+            
             
        <br>
             <button type="submit" class="save">Save</button>
