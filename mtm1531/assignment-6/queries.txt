@@ -1,0 +1,17 @@
+1- Get all the information about a single movie in the database.
+-- SELECT title, genre, directed_by, release_date, starring  FROM list_of_movies WHERE id = 1
+
+2-Get the title and release date for the first three movies in alphabetical order.
+--SELECT title, release_date FROM list_of_movies WHERE id < 4 ORDER BY title ASC
+
+3-Get the title and director for the movies ordered by the release date, oldest first.
+--SELECT title, directed_by  FROM list_of_movies  ORDER BY release_date DESC
+
+4-Change the title and director of a single movie in the database.
+--UPDATE list_of_movies SET title = 'Ice Age 44', directed_by = 'C' WHERE id = 2
+
+5-Create a new movie in the database.
+--INSERT list_of_movies SET title='Killer Joe', genre='Comedy', directed_by='William Friedkin',release_date='2012-07-27', starring='Matthew McConaughey, Emile Hirsch, Thomas Haden Church, Gina Gershon, Juno Temple'
+
+6-Remove a single movie from the database.
+--DELETE FROM list_of_movies WHERE id = 12

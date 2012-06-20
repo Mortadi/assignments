@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html{
+background-color: #333;	
+font-family: 'Righteous', cursive;
+width:30em;
+margin:0 auto;
+}
+dt{
+color: #F90;	
+}
+dd{
+	color: #ccc;
+	margin-left:1em;
+}
+a{
+	color: #F60;
+}
+h1{
+color: #F00;	
+}
+dl{
+border: 5px double #F90;
+    border-radius: 2em 1em 5em 1em;	
+	padding:1em;
+}
