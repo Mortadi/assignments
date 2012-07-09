@@ -1,0 +1,40 @@
+body{
+background-color: #666;	
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+}
+.wrapper {
+	width: 500px;
+	margin: 0 auto;
+	color: #CCC;
+}
+
+.nav ul {
+	margin-top: 2em;
+	padding: 0em;
+	text-align: center;
+}
+h2{
+color: #3CF;	
+}
+.current {
+	background-color:#930;
+	border-radius: 1em 0.5em;
+}
+
+.nav ul li {
+	display: inline;
+	text-align: center;
+	padding: 1em;
+	margin: 0em;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #3CF;
+}
+
+.tabs {
+	padding-top: 0.9em;
+	padding-left: 1.2em;
+}
