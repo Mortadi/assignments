@@ -2,3 +2,49 @@ body
 {
 background-color: #999;	
 }
+
+.name-available {
+	margin-left: 5em;
+}
+
+.name-available[data-status="unchecked"] {
+	display: none;
+}
+
+.name-available:before {
+	content: "✔";
+}
+
+.name-available[data-status="available"] {
+	color: #090;
+}
+
+.name-available[data-status="unavailable"] {
+	color: #f33;
+}
+
+.name-available[data-status="unavailable"]:before {
+	content: "✖";
+}
+
+.name-available[data-status="invalid"] {
+	color: #f33;
+}
+
+.name-available[data-status="invalid"]:before {
+	content: "✖";
+}
+
+form 
+{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 10em;
+	padding: 0.75em;
+	background-color:#F90;
+	color: #930;
+	font-family: 'Tahoma';
+	border: 0.5em  dashed #930;
+	border-radius: 2em 0.5em;
+	
+}
