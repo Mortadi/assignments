@@ -9,7 +9,7 @@ $(document).ready(function () {
 		nameAvailable.attr('data-status', 'unchecked');
 		
 		if (username.length >= 3 && username.length <= 20) {
-			var ajax = $.post('username-validation.php', {
+			var ajax = $.post('name-validation.php', {
 				'username' : username
 			});
 			
